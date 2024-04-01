@@ -27,7 +27,7 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Sun, 31 Mar 2024 03:59:09 GMT
+Date: Mon, 01 Apr 2024 00:27:44 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,17 +40,17 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "fea93303dcd08142b57ee5f11742501c",
+    "place_id": "4dc91fdd420bfadc3965806c1339ae8b",
     "scope": "APP",
-    "reference": "7bb6b5325358b14932e0aa67ac5652cd7bb6b5325358b14932e0aa67ac5652cd",
-    "id": "7bb6b5325358b14932e0aa67ac5652cd"
+    "reference": "8f39054d78f040ea27e4f7b4764073838f39054d78f040ea27e4f7b476407383",
+    "id": "8f39054d78f040ea27e4f7b476407383"
 }
 Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=fea93303dcd08142b57ee5f11742501c
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=4dc91fdd420bfadc3965806c1339ae8b
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=fea93303dcd08142b57ee5f11742501c
+				place_id=4dc91fdd420bfadc3965806c1339ae8b
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -59,7 +59,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Sun, 31 Mar 2024 03:59:10 GMT
+Date: Mon, 01 Apr 2024 00:27:46 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -84,11 +84,11 @@ Content-Type: application/json;charset=UTF-8
     "language": "English"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=fea93303dcd08142b57ee5f11742501c
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=4dc91fdd420bfadc3965806c1339ae8b
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=fea93303dcd08142b57ee5f11742501c
+				place_id=4dc91fdd420bfadc3965806c1339ae8b
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -97,7 +97,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Sun, 31 Mar 2024 03:59:11 GMT
+Date: Mon, 01 Apr 2024 00:27:47 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST

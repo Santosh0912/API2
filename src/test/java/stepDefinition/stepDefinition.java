@@ -36,7 +36,7 @@ public class stepDefinition {
 	@Given("Add place Payload with {string},{string},{string}")
 	public void add_place_payload_with(String name, String language, String address) throws IOException {
 		// data = new TestDataBuild();
-		System.out.println("Test 1");
+		System.out.println("STEP 1");
 
 		res = given().spec(utils.requestSpecification()).body(data.addPlacePayLoad(name, language, address));
 	}
@@ -44,7 +44,7 @@ public class stepDefinition {
 	// Step 2 for 2 Scenarios
 	@When("user calls  {string} with {string} http request")
 	public void user_calls_with_http_request(String resource, String method) {
-		System.out.println("Test 2");
+		System.out.println("STEP 2");
 
 		resourceAPI = APIResources.valueOf(resource);
 		System.out.println(resourceAPI.getResource());
@@ -69,6 +69,7 @@ public class stepDefinition {
 
 	@Then("the API call is success with status code {int}")
 	public void the_api_call_is_success_with_status_code(Integer int1) {
+		System.out.println("STEP 3");
 		System.out.println(response.getStatusCode());
 		assertEquals(response.getStatusCode(), 200);
 		System.out.println(response.asString());
@@ -79,6 +80,7 @@ public class stepDefinition {
 	@Then("{string} the in response body is {string}")
 	public void status_in_response_body_is_ok(String stabun, String value) {
 		// String responseString = response.asString();
+		System.out.println("STEP 4");
 		System.out.println(response.asString());
 		js = new JsonPath(response.asString());
 		System.out.println("Status : " + js.getString("status"));
@@ -95,7 +97,7 @@ public class stepDefinition {
 
 	@Then("{string} in response_body is {string}")
 	public void in_response_body_is(String status, String responses) {
-		System.out.println("Test 5");
+		System.out.println("STEP 6");
 
 		PlaceID = js.getString("place_id");
 		System.out.println("Place IDDDDDDDDD : " + PlaceID);
@@ -106,6 +108,7 @@ public class stepDefinition {
 
 	@Then("verify place_id created maps to {string} using {string}")
 	public void verify_place_id_created_maps_to_using_get_place_api(String name, String method) throws IOException {
+		System.out.println("STEP 7");
 		res = given().spec(utils.requestSpecification()).queryParam("place_id", PlaceID);
 		user_calls_with_http_request(method, "GET");
 
