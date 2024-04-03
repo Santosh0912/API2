@@ -9,7 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 		 features="src/test/java/features/",
 		 //glue= {"stepDefinition"},
 		 		 plugin="json:target/jsonReports/cucumber-report.json",
-				 glue= {"stepDefinition"})
+				 glue= {"stepDefinition"},
+				 tags="@DeletePlace")
 		//tags= "@AddPlace and @DeletePlace")
 
 		//features = "src/test/java/features", glue = { "stepDefinition" }, tags = "@AddPlace")
