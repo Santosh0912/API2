@@ -22,3 +22,13 @@ Feature: Validating place APIs
     Examples: 
       | name          | language | address  |
       | SanthoshHouse | Telugu   | Tajmahal |
+
+  @DeletePlace
+  Scenario Outline: Verify if place is being successfully added using AddPlaceAPI
+    Given Add place Payload with "<name>","<language>","<address>"
+    When user calls  "AddPlaceAPI" with "Post" http request
+    Then the API call is success with status code 200
+
+    Examples: 
+      | name         | language | address    |
+      | EtikalaHouse | Hindi    | PeterSmith |
